@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222016"
+    tools:context=".Add">
+
+    <LinearLayout
+        android:id = "@+id/Linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Adicionar"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/Linear1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/editMateria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor = "#ffffff"
+            android:layout_marginBottom="20dp"
+            android:textColorHint="#CCCCCC"
+            android:hint="MATERIA"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor = "#FFFFFF"
+            android:textColorHint="#CCCCCC"
+            android:hint="DESC"
+            android:layout_marginBottom="40dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/buttonAd"
+            android:layout_width="match_parent"
+            android:layout_marginBottom = "20dp"
+            android:background="@drawable/botao_customizado"
+            android:layout_height="wrap_content"
+            android:textColor = "#ffffff"
+            android:text="Adicionar" />
+
+        <Button
+            android:id="@+id/botaoVoltar"
+            android:layout_width="match_parent"
+            android:textColor = "#ffffff"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao_customizado"
+            android:text="voltar" />
+
+
+    </LinearLayout>
+</RelativeLayout>
